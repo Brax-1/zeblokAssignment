@@ -1,0 +1,26 @@
+.Input-main {
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin: 15px 0;
+	border-radius: 3px;
+}
+.Input-icon {
+	position: absolute;
+	left: 10px;
+}
+.Input-field {
+	padding: 17px 40px;
+	width: 100%;
+	background: none;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	background: #e0e0e0;
+	transition: 0.2s;
+	box-shadow: 5px 5px 10px #c3c3c3, -5px -5px 10px #fdfdfd;
+}
+.Input-field:hover,
+.Input-field:focus {
+	box-shadow: inset -5px -5px 10px #fdfdfd,inset 5px 5px 10px #c3c3c3;
+}

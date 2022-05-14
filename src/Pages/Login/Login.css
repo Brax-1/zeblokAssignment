@@ -1,0 +1,94 @@
+.login-window {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.login-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	padding: 0 5%;
+}
+.login-tagline {
+	font-size: 35px;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+.login-content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+}
+.login-logo {
+	max-width: 200px;
+	margin-bottom: 20px;
+	transition: 0.2s;
+}
+.login-logo:hover {
+	box-shadow: 1px 5px 10px 0px rgba(128, 128, 128, 0.247);
+	padding: 12px;
+	border-radius: 5px;
+}
+.login-left {
+	background: #fffbef;
+	box-shadow: 0 0 40px -10px rgba(128, 128, 128, 0.274);
+}
+.login-right {
+	background: linear-gradient(-45deg, #f0f0f0, #e0e0e0);
+}
+.login-form {
+	width: 80%;
+	max-width: 500px;
+}
+.login-left-image {
+	width: 100%;
+}
+.login-welcome-title {
+	font-size: 35px;
+	font-weight: 500;
+}
+.login-requirement-line {
+	color: #6b6b6b;
+	font-size: 18px;
+	margin-bottom: 2rem;
+}
+.login-btn {
+	width: 30%;
+	margin-top: 30px;
+}
+.login-span {
+	color: #881630;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.login-span:hover {
+	color: #ffc000;
+}
+.login-already-account {
+	margin-top: 10px;
+}
+.login-remember-section {
+	display: flex;
+	justify-content: space-between;
+}
+.login-forgotPassword {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 0 20px;
+	transition: 0.2s;
+}
+.login-forgotPassword:hover {
+	color: #ffc000;
+}
+@media screen and (max-width: 1200px) {
+	.login-left {
+        display: none;
+    }
+    .login-right {
+        width: 100%;
+    }
+}
