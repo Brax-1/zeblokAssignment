@@ -1,0 +1,31 @@
+.csv-main {
+	width: 100vw;
+	height: 100vh;
+    margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.csv-box {
+	width: 100%;
+	display: flex;
+}
+.csv-button-top {
+	display: flex;
+}
+.csv-end {
+	justify-content: end;
+}
+.csv-table-cover {
+	width: 100%;
+	margin: 10px;
+}
+@media screen and (min-width: 1200px) {
+	.csv-main {
+		width: 80%;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.csv-main {
+		width: 70%;
+	}
+}

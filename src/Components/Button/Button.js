@@ -3,24 +3,22 @@ import React from "react";
 import "./Button.css";
 import { styled } from "@mui/material/styles";
 
-const StyledBtn = styled(Button)(({ theme }) => ({
-    background:"#881630",
-    padding:"10px 40px",
-    width:"100%",
-    height:"100%",
-    display:"flex",
-    alignItems:"center",
-    color:"#e0e0e0",
-    '&:hover':{
-        background:"#FFC000",
-        fontWeight:"800",
-    }
-}));
-
 const StyledButton = (props) => {
+	const StyledBtn = styled(Button)(({ theme }) => ({
+		background: `${props.styleDetails ? props.styleDetails.bgcolor:theme.palette.primary.main}`,
+		padding: "10px 40px",
+		width: "100%",
+		height: "100%",
+		display: "flex",
+		alignItems: "center",
+		color: `${props.styleDetails ? props.styleDetails.color:'white'}`,
+		"&:hover": {
+			background: `${props.styleDetails ? props.styleDetails.bghover:theme.palette.primary.dark}`,
+		},
+	}));
 	return (
-		<div>
-			<StyledBtn variant="contained"  endIcon={props.endIcon}>
+		<div style={{ margin: "10px" }}>
+			<StyledBtn variant="contained" endIcon={props.endIcon}>
 				{props.name}
 			</StyledBtn>
 		</div>
