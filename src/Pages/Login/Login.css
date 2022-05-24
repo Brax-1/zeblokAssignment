@@ -33,10 +33,11 @@
 }
 .login-left {
 	background: #fffbef;
-	box-shadow: 0 0 40px -10px rgba(128, 128, 128, 0.274);
+	z-index: 1;
+	box-shadow: 0 0 40px -10px rgba(128, 128, 128, 0.267);
 }
 .login-right {
-	background: linear-gradient(-45deg, #f0f0f0, #e0e0e0);
+	background: linear-gradient(-45deg, #f0f0f0, #ffffff);
 }
 .login-form {
 	width: 80%;

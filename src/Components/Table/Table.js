@@ -10,6 +10,7 @@ const Table = (props) => {
 				))}
 			</thead>
 			<tbody>
+                {props.rows.length===0 && <tr><td style={{textAlign:'center'}} colSpan={'5'}>No Data Found</td></tr>}
 				{props.rows.map((row) => (
 					<tr>
 						<td>{row.osid}</td>

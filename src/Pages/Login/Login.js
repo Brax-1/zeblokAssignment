@@ -7,8 +7,10 @@ import { Lock, Email } from "@mui/icons-material";
 import StyledButton from "../../Components/Button/Button";
 import { ExitToApp } from "@mui/icons-material";
 import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+	const navigation = useNavigate()
 	return (
 		<div className="login-window">
 			<div className="login-box login-left">
@@ -55,7 +57,7 @@ const Login = () => {
                             Forgot Password?
                         </button>
 					</div>
-					<div className="login-btn">
+					<div className="login-btn" onClick={()=>navigation('/csv')}>
 						<StyledButton name={"Login"} endIcon={<ExitToApp />} />
 					</div>
 					<div className="login-already-account">

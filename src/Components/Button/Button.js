@@ -17,7 +17,7 @@ const StyledButton = (props) => {
 		},
 	}));
 	return (
-		<div style={{ margin: "10px" }}>
+		<div onClick={()=>props.onClickFunc()} style={{ margin: "10px" }}>
 			<StyledBtn variant="contained" endIcon={props.endIcon}>
 				{props.name}
 			</StyledBtn>

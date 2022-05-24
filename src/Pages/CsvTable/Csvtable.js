@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import StyledButton from "../../Components/Button/Button";
 import Table from "../../Components/Table/Table";
 import "./CsvTable.css";
@@ -9,7 +9,7 @@ const tableheaders = [
 	{ name: "Password", type: "text" },
 	{ name: "Status", type: "status" },
 ];
-const tableData = [
+const Data = [
     {
         osid:'T980293480',
         psmid:'PS102983213',
@@ -48,11 +48,15 @@ const tableData = [
 ]
 
 const Csvtable = () => {
+    const [tableData,setTableData] = useState([]);
+    function handleTableData() {
+        setTableData(Data);
+    }
 	return (
 		<div className="csv-main">
 			<div className="csv-box csv-end">
 				<div className="csv-button-top">
-					<StyledButton name={"Import Csv"} />
+					<StyledButton name={"Import Csv"} onClickFunc={handleTableData}/>
 					<StyledButton name={"Add New"} />
 				</div>
 			</div>
