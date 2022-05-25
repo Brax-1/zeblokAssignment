@@ -10,63 +10,65 @@ const tableheaders = [
 	{ name: "Status", type: "status" },
 ];
 const Data = [
-    {
-        osid:'T980293480',
-        psmid:'PS102983213',
-        username:'Brax-1',
-        password:'Alop123',
-        status:'completed'
-    },
-    {
-        osid:'T980293480',
-        psmid:'PS102983213',
-        username:'Brax-1',
-        password:'Alop123',
-        status:'pending'
-    },
-    {
-        osid:'T980293480',
-        psmid:'PS102983213',
-        username:'Brax-1',
-        password:'Alop123',
-        status:'failed'
-    },
-    {
-        osid:'T980293480',
-        psmid:'PS102983213',
-        username:'Brax-1',
-        password:'Alop123',
-        status:'completed'
-    },
-    {
-        osid:'T980293480',
-        psmid:'PS102983213',
-        username:'Brax-1',
-        password:'Alop123',
-        status:'failed'
-    },
-]
+	{
+		osid: "T980293480",
+		psmid: "PS102983213",
+		username: "Brax-1",
+		password: "Alop123",
+		status: "completed",
+	},
+	{
+		osid: "T980293480",
+		psmid: "PS102983213",
+		username: "Brax-1",
+		password: "Alop123",
+		status: "pending",
+	},
+	{
+		osid: "T980293480",
+		psmid: "PS102983213",
+		username: "Brax-1",
+		password: "Alop123",
+		status: "failed",
+	},
+	{
+		osid: "T980293480",
+		psmid: "PS102983213",
+		username: "Brax-1",
+		password: "Alop123",
+		status: "completed",
+	},
+	{
+		osid: "T980293480",
+		psmid: "PS102983213",
+		username: "Brax-1",
+		password: "Alop123",
+		status: "failed",
+	},
+];
 
 const Csvtable = () => {
-    const [tableData,setTableData] = useState([]);
-    function handleTableData() {
-        setTableData(Data);
-    }
+	const [tableData, setTableData] = useState([]);
+	function handleTableData() {
+		setTableData(Data);
+	}
 	return (
 		<div className="csv-main">
 			<div className="csv-box csv-end">
 				<div className="csv-button-top">
-					<StyledButton name={"Import Csv"} onClickFunc={handleTableData}/>
+					<StyledButton name={"Import Csv"} onClickFunc={handleTableData} />
 					<StyledButton name={"Add New"} />
 				</div>
 			</div>
 			<div className="csv-box csv-table">
 				<div className="csv-table-cover">
-					<Table columns={tableheaders} rows={tableData}/>
+					<Table columns={tableheaders} rows={tableData} />
 				</div>
 			</div>
 			<div className="csv-box csv-end">
-				<StyledButton name={"Validate"} />
+				<div className="csv-button-valid">
+					<StyledButton name={"Validate"} />
+				</div>
 			</div>
 		</div>
 	);

@@ -2,6 +2,7 @@
 	width: 100%;
 	height: 100%;
 	display: flex;
+	min-height: 500px;
 }
 .login-box {
 	display: flex;
@@ -92,4 +93,27 @@
     .login-right {
         width: 100%;
     }
+}
+@media screen and (max-width: 600px) {
+	.login-welcome-title {
+		font-size: 25px;
+	}
+	.login-requirement-line{
+		font-size: 15px;
+	}
+	.login-forgotPassword,.login-already-account{
+		font-size: 10px;
+	}
+	.login-btn{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 350px) {
+	.login-remember-section{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.login-forgotPassword {
+		padding: 0;
+	}
 }

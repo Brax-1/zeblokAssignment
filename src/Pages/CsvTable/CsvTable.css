@@ -10,14 +10,22 @@
 	display: flex;
 }
 .csv-button-top {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 10px;
+	column-gap: 10px;
+	margin-right: 10px;
 }
 .csv-end {
 	justify-content: end;
 }
+.csv-button-valid{
+	margin-right: 10px;
+}
 .csv-table-cover {
 	width: 100%;
 	margin: 10px;
+	overflow: scroll;
 }
 @media screen and (min-width: 1200px) {
 	.csv-main {

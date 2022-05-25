@@ -24,3 +24,8 @@
 .Input-field:focus {
 	box-shadow: inset -5px -5px 10px #fdfdfd,inset 5px 5px 10px #c3c3c3;
 }
+@media screen and (max-width: 600px) {
+	.Input-field {
+		font-size: 10px;
+	}
+}

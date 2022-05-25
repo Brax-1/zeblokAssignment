@@ -8,6 +8,16 @@ import StyledButton from "../../Components/Button/Button";
 import { ExitToApp } from "@mui/icons-material";
 import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import { styled } from "@mui/material/styles";
+
+const StyledFormControlLabel = styled(FormControlLabel)(({ theme }) => ({
+	'& span':{
+		[theme.breakpoints.down("sm")]: {
+			fontSize: "10px",
+		},
+	},
+	
+}));
 
 const Login = () => {
 	const navigation = useNavigate()
@@ -48,7 +58,7 @@ const Login = () => {
 					/>
 					<div className="login-remember-section">
 						<FormGroup>
-							<FormControlLabel
+							<StyledFormControlLabel
 								control={<Checkbox defaultChecked />}
 								label="Remember Me?"
 							/>
