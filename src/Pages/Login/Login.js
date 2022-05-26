@@ -67,7 +67,7 @@ const Login = () => {
                             Forgot Password?
                         </button>
 					</div>
-					<div className="login-btn" onClick={()=>navigation('/csv')}>
+					<div className="login-btn" onClick={()=>navigation('/welcome')}>
 						<StyledButton name={"Login"} endIcon={<ExitToApp />} />
 					</div>
 					<div className="login-already-account">

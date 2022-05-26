@@ -10,11 +10,13 @@ const StyledButton = (props) => {
 				? props.styleDetails.bgcolor
 				: theme.palette.primary.main
 		}`,
-		padding: "10px 40px",
+		padding: `${props.styleDetails ? props.styleDetails.padding : "10px 40px"}`,
 		width: "100%",
 		height: "100%",
 		display: "flex",
 		alignItems: "center",
+		borderRadius: `${props.styleDetails ? props.styleDetails.borderRadius : "5px"}`,
+		whiteSpace: 'nowrap',
 		color: `${props.styleDetails ? props.styleDetails.color : "white"}`,
 		"&:hover": {
 			background: `${

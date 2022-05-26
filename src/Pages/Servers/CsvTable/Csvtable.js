@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import StyledButton from "../../Components/Button/Button";
-import Table from "../../Components/Table/Table";
+import StyledButton from "../../../Components/Button/Button";
+import Table from "../../../Components/Table/Table";
 import "./CsvTable.css";
 const tableheaders = [
 	{ name: "Os Id", type: "text" },
@@ -62,7 +62,7 @@ const Csvtable = () => {
 			</div>
 			<div className="csv-box csv-table">
 				<div className="csv-table-cover">
-					<Table columns={tableheaders} rows={tableData} />
+					<Table tableStyle={{fontsize:"12px"}} columns={tableheaders} rows={tableData} />
 				</div>
 			</div>
 			<div className="csv-box csv-end">

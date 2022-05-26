@@ -1,0 +1,15 @@
+.searchbar-main{
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    min-width: 300px;
+}
+.searchbar-main input{
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
